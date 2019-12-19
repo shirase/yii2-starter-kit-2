@@ -2,6 +2,7 @@ const path = require('path');
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const autoprefixer = require('autoprefixer');
 
 const commonConfig = {
   module: {
@@ -32,6 +33,15 @@ const commonConfig = {
           //'style-loader',
           // Translates CSS into CommonJS
           'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                autoprefixer(),
+              ],
+              //sourceMap: true
+            }
+          },
           // Compiles Sass to CSS
           'sass-loader',
         ],
