@@ -9,7 +9,7 @@ $config = [
         ],
         'request' => [
             'cookieValidationKey' => env('BACKEND_COOKIE_VALIDATION_KEY'),
-            'baseUrl' => env('BACKEND_BASE_URL'),
+            'baseUrl' => rtrim(env('BACKEND_BASE_URL'), '/'),
         ],
         'user' => [
             'class' => yii\web\User::class,
