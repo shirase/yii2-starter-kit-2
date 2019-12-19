@@ -13,4 +13,4 @@ RewriteCond %{REQUEST_URI} ^/storage
 RewriteRule ^storage(.*) /storage/web$1 [L]
 
 RewriteCond %{REQUEST_URI} ^/api
-RewriteRule ^storage(.*) /api/web$1 [L]
+RewriteRule ^api(.*) /api/web$1 [L]

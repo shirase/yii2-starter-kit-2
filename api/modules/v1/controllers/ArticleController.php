@@ -17,7 +17,7 @@ use yii\web\HttpException;
 /**
  * @SWG\Swagger(
  *     schemes={"http","https"},
- *     basePath="/",
+ *     basePath="/api",
  *     @SWG\Info(
  *         version="1.0.0",
  *         title="Yii2-Starter-Kit API Documentation",

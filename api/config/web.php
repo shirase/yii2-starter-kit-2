@@ -22,6 +22,7 @@ $config = [
         ],
         'request' => [
             'enableCookieValidation' => false,
+            'baseUrl' => rtrim(env('API_BASE_URL'), '/'),
         ],
         'user' => [
             'class' => yii\web\User::class,
