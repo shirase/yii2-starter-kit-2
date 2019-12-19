@@ -23,9 +23,6 @@ $config = [
         'content' => [
             'class' => backend\modules\content\Module::class,
         ],
-        'widget' => [
-            'class' => backend\modules\widget\Module::class,
-        ],
         'file' => [
             'class' => backend\modules\file\Module::class,
         ],
@@ -35,9 +32,16 @@ $config = [
         'translation' => [
             'class' => backend\modules\translation\Module::class,
         ],
-        'rbac' => [
+        /*'rbac' => [
             'class' => backend\modules\rbac\Module::class,
             'defaultRoute' => 'rbac-auth-item/index',
+        ],*/
+        'rbac' => [
+            'class' => 'mdm\admin\Module',
+            'mainLayout' => '@backend/views/layouts/main.php',
+            'menus' => [
+                'user' => null,
+            ],
         ],
     ],
     'as globalAccess' => [
