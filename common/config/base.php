@@ -40,9 +40,10 @@ $config = [
         ],
 
         'glide' => [
-            'class' => trntv\glide\components\Glide::class,
+            'class' => 'shirase55\glide\components\Glide',
             'sourcePath' => '@storage/web/source',
-            'cachePath' => '@storage/cache',
+            'cachePath' => '@storage/web/cache',
+            'baseUrl' => Yii::getAlias('@storageUrl') . '/source',
             'urlManager' => 'urlManagerStorage',
             'maxImageSize' => env('GLIDE_MAX_IMAGE_SIZE'),
             'signKey' => env('GLIDE_SIGN_KEY')
