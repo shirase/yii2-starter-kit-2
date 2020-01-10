@@ -40,7 +40,7 @@ $config = [
         ],
 
         'glide' => [
-            'class' => 'shirase55\glide\components\Glide',
+            'class' => 'trntv\glide\components\Glide',
             'sourcePath' => '@storage/web/source',
             'cachePath' => '@storage/web/cache',
             'baseUrl' => Yii::getAlias('@storageUrl') . '/source',
