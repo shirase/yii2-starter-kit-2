@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php echo \yii\helpers\Html::img(
                 Yii::$app->glide->createSignedUrl([
                     'glide/index',
-                    'path' => str_replace('\\', '/', $model->thumbnail_path),
+                    'path' => $model->thumbnail_path,
                     'w' => 200
                 ], true),
                 ['class' => 'article-thumb img-rounded pull-left']

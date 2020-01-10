@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6b6729762ed465094f27f74b4adf986",
+    "content-hash": "7478858e1a3892469ffe701a0dbb3f80",
     "packages": [
         {
             "name": "alexantr/yii2-elfinder",
@@ -129,16 +129,16 @@
         },
         {
             "name": "bower-asset/blueimp-canvas-to-blob",
-            "version": "v3.16.0",
+            "version": "v3.17.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:blueimp/JavaScript-Canvas-to-Blob.git",
-                "reference": "eab2845ebb03c9667ea6ade002ceadbef071c060"
+                "reference": "12747b0d2ebddaadba40e542c799fd2810918cf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blueimp/JavaScript-Canvas-to-Blob/zipball/eab2845ebb03c9667ea6ade002ceadbef071c060",
-                "reference": "eab2845ebb03c9667ea6ade002ceadbef071c060",
+                "url": "https://api.github.com/repos/blueimp/JavaScript-Canvas-to-Blob/zipball/12747b0d2ebddaadba40e542c799fd2810918cf8",
+                "reference": "12747b0d2ebddaadba40e542c799fd2810918cf8",
                 "shasum": null
             },
             "type": "bower-asset"
@@ -170,16 +170,16 @@
         },
         {
             "name": "bower-asset/blueimp-load-image",
-            "version": "v2.24.0",
+            "version": "v2.26.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:blueimp/JavaScript-Load-Image.git",
-                "reference": "1196b4ce3c56f01cacf90fc5527b324ecccdf3b0"
+                "reference": "d088785e5bc7d5d861ad7f3d80f27f50b367b451"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/1196b4ce3c56f01cacf90fc5527b324ecccdf3b0",
-                "reference": "1196b4ce3c56f01cacf90fc5527b324ecccdf3b0",
+                "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/d088785e5bc7d5d861ad7f3d80f27f50b367b451",
+                "reference": "d088785e5bc7d5d861ad7f3d80f27f50b367b451",
                 "shasum": null
             },
             "type": "bower-asset"
@@ -999,16 +999,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.61",
+            "version": "1.0.63",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "4fb13c01784a6c9f165a351e996871488ca2d8c9"
+                "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/4fb13c01784a6c9f165a351e996871488ca2d8c9",
-                "reference": "4fb13c01784a6c9f165a351e996871488ca2d8c9",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/8132daec326565036bc8e8d1876f77ec183a7bd6",
+                "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6",
                 "shasum": ""
             },
             "require": {
@@ -1079,7 +1079,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-12-08T21:46:50+00:00"
+            "time": "2020-01-04T16:30:31+00:00"
         },
         {
             "name": "league/glide",
@@ -4038,6 +4038,52 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
+            "name": "shirase55/yii2-file-kit",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shirase/yii2-file-kit.git",
+                "reference": "0cac04acf70051ccb554dbf3eb180fe52b0780db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/shirase/yii2-file-kit/zipball/0cac04acf70051ccb554dbf3eb180fe52b0780db",
+                "reference": "0cac04acf70051ccb554dbf3eb180fe52b0780db",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/blueimp-file-upload": "^9.7.0",
+                "league/flysystem": "^1.0",
+                "yiisoft/yii2": "^2.0.13",
+                "yiisoft/yii2-jui": "^2.0.0"
+            },
+            "replace": {
+                "yii2-starter-kit/yii2-file-kit": "*"
+            },
+            "require-dev": {
+                "creocoder/yii2-flysystem": "~0.8",
+                "phpunit/phpunit": "~4.5.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "trntv\\filekit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Eugene Terentev",
+                    "email": "eugene@terentev.net"
+                }
+            ],
+            "description": "Yii2 file upload and storage kit",
+            "time": "2020-01-10T21:14:07+00:00"
+        },
+        {
             "name": "shirase55/yii2-glide",
             "version": "2.0.0",
             "source": {
@@ -5014,49 +5060,6 @@
                 "environment"
             ],
             "time": "2019-01-29T11:11:52+00:00"
-        },
-        {
-            "name": "yii2-starter-kit/yii2-file-kit",
-            "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yii2-starter-kit/yii2-file-kit.git",
-                "reference": "94f0bdd241cebe1e04f788f30010107975a4df0b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yii2-starter-kit/yii2-file-kit/zipball/94f0bdd241cebe1e04f788f30010107975a4df0b",
-                "reference": "94f0bdd241cebe1e04f788f30010107975a4df0b",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/blueimp-file-upload": "^9.7.0",
-                "league/flysystem": "^1.0",
-                "yiisoft/yii2": "^2.0.13",
-                "yiisoft/yii2-jui": "^2.0.0"
-            },
-            "require-dev": {
-                "creocoder/yii2-flysystem": "~0.8",
-                "phpunit/phpunit": "~4.5.0"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "trntv\\filekit\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Eugene Terentev",
-                    "email": "eugene@terentev.net"
-                }
-            ],
-            "description": "Yii2 file upload and storage kit",
-            "time": "2019-02-18T13:13:55+00:00"
         },
         {
             "name": "yii2mod/yii2-swagger",
