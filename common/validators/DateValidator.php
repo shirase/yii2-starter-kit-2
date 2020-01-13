@@ -6,7 +6,7 @@ use yii\db\ActiveRecord;
 
 class DateValidator extends \yii\validators\DateValidator
 {
-    private $handlered = [];
+    private $processed = [];
 
     public $format = 'php:d.m.Y';
 
@@ -18,8 +18,8 @@ class DateValidator extends \yii\validators\DateValidator
 
         if (!$model->hasErrors($attribute)) {
             if ($ts = $this->parseDateValue($model->$attribute)) {
-                if (array_search($attribute, $this->handlered)===false) {
-                    $this->handlered[] = $attribute;
+                if (array_search($attribute, $this->processed)===false) {
+                    $this->processed[] = $attribute;
                     DateValidatorHandler::init($model, $attribute, date('Y-m-d H:i:s', $ts));
                 }
             }
