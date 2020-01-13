@@ -1,16 +1,12 @@
 RewriteEngine on
 
-RewriteCond %{REQUEST_URI} !^/(backend|admin|storage|api)
-RewriteRule !^frontend/web /frontend/web%{REQUEST_URI} [L]
-
-RewriteCond %{REQUEST_URI} ^/admin$
-RewriteRule ^admin /backend/web/index.php [L]
-
 RewriteCond %{REQUEST_URI} ^/admin
-RewriteRule ^admin(.*) /backend/web$1 [L]
+RewriteRule ^admin(.*) /backend/web/$1 [L]
 
 RewriteCond %{REQUEST_URI} ^/storage
-RewriteRule ^storage(.*) /storage/web$1 [L]
+RewriteRule ^storage(.*) /storage/web/$1 [L]
 
 RewriteCond %{REQUEST_URI} ^/api
-RewriteRule ^api(.*) /api/web$1 [L]
+RewriteRule ^api(.*) /api/web/$1 [L]
+
+RewriteRule (.*) /frontend/web/$1 [L]
