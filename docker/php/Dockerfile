@@ -17,11 +17,11 @@ RUN docker-php-ext-install zip intl mbstring pdo_mysql exif \
 
 RUN pecl install -o -f xdebug \
     && pecl install -o -f mongodb \
+    && docker-php-ext-enable mongodb \
     && pecl install -o -f memcached \
+    && docker-php-ext-enable memcached \
     && pecl install -o -f redis \
-    && docker-php-ext-enable /usr/local/lib/php/extensions/no-debug-non-zts-20170718/mongodb.so \
-    && docker-php-ext-enable /usr/local/lib/php/extensions/no-debug-non-zts-20170718/memcached.so \
-    && docker-php-ext-enable /usr/local/lib/php/extensions/no-debug-non-zts-20170718/redis.so \
+    && docker-php-ext-enable redis \
     && rm -rf /tmp/pear
 
 COPY ./install-composer.sh /
