@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libicu-dev \
+        libmemcached-dev \
         wget \
         git \
         zip \
@@ -15,12 +16,18 @@ RUN docker-php-ext-install zip intl mbstring pdo_mysql exif \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install gd
 
-RUN pecl install -o -f xdebug \
-    && pecl install -o -f mongodb \
-    && docker-php-ext-enable mongodb \
-    && pecl install -o -f memcached \
+#RUN pecl install -o -f xdebug \
+#    && rm -rf /tmp/pear
+
+RUN pecl install memcached \
     && docker-php-ext-enable memcached \
-    && pecl install -o -f redis \
+    && rm -rf /tmp/pear
+
+RUN pecl install mongodb \
+    && docker-php-ext-enable mongodb \
+    && rm -rf /tmp/pear
+
+RUN pecl install redis \
     && docker-php-ext-enable redis \
     && rm -rf /tmp/pear
 
