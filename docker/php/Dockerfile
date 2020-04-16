@@ -16,8 +16,8 @@ RUN docker-php-ext-install zip intl mbstring pdo_mysql exif \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install gd
 
-#RUN pecl install -o -f xdebug \
-#    && rm -rf /tmp/pear
+RUN pecl install -o -f xdebug \
+    && rm -rf /tmp/pear
 
 RUN pecl install memcached \
     && docker-php-ext-enable memcached \
