@@ -9,10 +9,10 @@ return [
     'rules' => [
         // Pages
         ['pattern' => '/', 'route' => 'site/index'],
-        ['pattern' => 'page/<slug>', 'route' => 'page/view'],
+        ['pattern' => '<slug>', 'route' => 'page/view', 'modelClass' => 'common\models\Page', 'class' => 'common\web\SlugUrlRule'],
 
         // Articles
-        ['pattern' => 'article/index', 'route' => 'article/index'],
+        ['pattern' => 'article', 'route' => 'article/index'],
         ['pattern' => 'article/attachment-download', 'route' => 'article/attachment-download'],
         ['pattern' => 'article/<slug>', 'route' => 'article/view'],
 
